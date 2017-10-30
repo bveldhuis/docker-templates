@@ -4,7 +4,7 @@
 <Beta>False</Beta>
 <Category>Network:Web Network</Category>
 <Date>2017-10-30</Date>
-  <Name>apache</Name>
+  <Name>docker-apache</Name>
   <Overview>A copy of the apache webserver package from linuxserver, but using a newer version of apache and php.</Overview>
   <Changes>- Initial Release</Changes>
   <Description>This is an apache web server docker with reverse proxy services enabled. Reverse proxy gives the ability going to www.domain.com:8351 for a service, you can go direct to www.domain.com/service and also enable HTTPS.[br]
@@ -14,7 +14,7 @@
   [b]/config[/b]Storing Configuration and the www folder[br]
   </Description>
   <Project>http://httpd.apache.org/docs/2.2/mod/mod_proxy.html</Project>
-  <Repository>bveldhuis/apache</Repository>
+  <Repository>bveldhuis/docker-apache</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
