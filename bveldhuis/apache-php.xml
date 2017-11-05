@@ -3,7 +3,7 @@
 <TemplateURL>https://raw.githubusercontent.com/bveldhuis/docker-templates/master/bveldhuis/apache-php.xml</TemplateURL>
 <Beta>False</Beta>
 <Category>Network:Web Network</Category>
-<Date>2017-10-30</Date>
+<Date>2017-11-05</Date>
   <Name>docker-apache</Name>
   <Overview>A copy of the apache webserver package from linuxserver, but using a newer version of apache and php.</Overview>
   <Changes>- Initial Release</Changes>
