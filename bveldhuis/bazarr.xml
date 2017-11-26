@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+<TemplateURL>https://raw.githubusercontent.com/bveldhuis/docker-templates/master/bveldhuis/bazarr.xml</TemplateURL>
+<Beta>False</Beta>
+<Category>Network:Web Network</Category>
+<Date>2017-11-05</Date>
+  <Name>Bazarr</Name>
+  <Overview>Bazarr is a companion application to Sonarr. It manage and download subtitles based on your requirements. You defined your preferences by TV show and Bazarr take care of everything for you. </Overview>
+  <Changes>- Initial Release</Changes>
+  <Description>See: https://github.com/morpheus65535/bazarr</Description>
+  <Repository>morpheus65535/bazarr</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6767</HostPort>
+        <ContainerPort>6767</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/tv</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+	<Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/bazarr/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version></Version>
+  <WebUI>http://[IP]:[PORT:6767]/</WebUI>
+  <ExtraParams></ExtraParams>
+</Container>
